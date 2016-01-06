@@ -27,6 +27,7 @@
 			<div class="cleaner"></div>
 		</div>
 	</li>
+
 	<li>
 		<div>	
 			<label class="la_comentario" for="comentario">Comentarios adicionales</label>
@@ -34,5 +35,4 @@
 			<div class="cleaner"></div>
 		</div>
 	</li>
-	
 </ul>

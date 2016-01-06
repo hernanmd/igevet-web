@@ -9,21 +9,40 @@
 	require_once 'messages.php';
 	require_once '../class_IGEVETBaseForm.php';
 	
-	class IGEVETST37Form extends IGEVETBaseForm {
+	class IGEVETST247Form extends IGEVETBaseForm {
 
 		private $comentario;
-
-
+		private $tipo_analisis;
+		private $raza;
+		private $num_muestras;
+		private $tipo_muestras;
+		private $tipo;
 
 		/* 
 		*
 		*	Form Functions
 		*
 		*/
+
+		function getTipoAnalisis(){
+			return $this->tipo_analisis;
+		}
+		function getRaza(){
+			return $this->raza;
+		}
+
+		function getNumMuestras(){
+			return $this->num_muestras;
+		}
+		function getTipoMuestras(){
+			return $this->tipo_muestras;
+		}
+		function getTipo(){
+			return $this->tipo;
+		}
 		function getComentario(){
 			return $this->comentario;
 		}
-
 
 		function getErrors (&$returnArray)
 		{
@@ -50,23 +69,28 @@
 				"<b>E-mail: </b>" . $this->getEmailAddress() . "<br>" .
 				"<b>Institución: </b>" . $this->getInstitution() . "<br>" . 
 				"<b>Número de Teléfono: </b>" . $this->getPhoneNumner() . "<br>" .
+				"<b>Tipo de Analisis: </b>" . $this->getTipoAnalisis() . "<br>" .
+				"<b>Raza: </b>" . $this->getRaza()) . "<br>" .
+				"<b>Numero de muestras: </b>" . $this->getNumMuestras() . "<br>" .
+				"<b>Tipo: </b>" . $this->getTipo() . "<br>" .
+				"<b>Tipo de muestra: </b>" . $this->getTipoMuestras() . "<br>" .
 				"<b>Comentarios: </b>" . "<br>" . $this->getComentario() . "<br>";
 			return $mail_message;
 		}
 		
 		function formValidate() {
+
 			//Put form elements into post variables (this is where you would sanitize your data)
 			$this->checkCompleteName($_POST['complete_name']);
 			$this->checkEmail($_POST['email'], EMAIL);
 			$this->checkInstitution($_POST["institution"]);
-			$this->checkPhoneNumber($_POST["phone_number"]);			
-			
+			$this->checkPhoneNumber($_POST["phone_number"]);
 			if(isset($_POST["comentario"])){
 				$this->comentario = htmlspecialchars_decode($_POST["comentario"]);
 			}
 			else{
 				$this->comentario = " ";
-			}	
+			}			
 			
 			//Establish values that will be returned via ajax
 			$returnArray = array();
@@ -76,22 +100,20 @@
 			if ($this->hasErrors($returnArray) === false){
 				$to = "servicios@igevet.gob.ar";
 				$mail_message = $this->buildMailMessage();
-				//$result = $this->sendMail("hernan.morales@gmail.com","REQ ST37", $mail_message);
-				$result = $this->sendMail($to,"REQ ST37", $mail_message);
+				$result = $this->sendMail($to,"REQ ST247", $mail_message);
 				if (! $result) 
-					//$returnArray['error'] = true;
-					header("Location:solicitud_error.php");
+					exit(header("Location:solicitud_error.php", true));
 				else
 					$returnArray['error'] = false;
 			}
 			else {
 				$returnArray['error'] = true;
 			}
-			// print_r($returnArray);
+			
 			return json_encode($returnArray);			
 		}
 	}
 
-	$ajaxValidate = new IGEVETST37Form;
+	$ajaxValidate = new IGEVETST247Form;
 	echo $ajaxValidate->formValidate();		
 ?>

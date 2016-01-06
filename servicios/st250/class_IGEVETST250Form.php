@@ -9,21 +9,19 @@
 	require_once 'messages.php';
 	require_once '../class_IGEVETBaseForm.php';
 	
-	class IGEVETST37Form extends IGEVETBaseForm {
+	class IGEVETST250Form extends IGEVETBaseForm {
 
 		private $comentario;
-
-
 
 		/* 
 		*
 		*	Form Functions
 		*
 		*/
+
 		function getComentario(){
 			return $this->comentario;
 		}
-
 
 		function getErrors (&$returnArray)
 		{
@@ -55,18 +53,18 @@
 		}
 		
 		function formValidate() {
+
 			//Put form elements into post variables (this is where you would sanitize your data)
 			$this->checkCompleteName($_POST['complete_name']);
 			$this->checkEmail($_POST['email'], EMAIL);
 			$this->checkInstitution($_POST["institution"]);
-			$this->checkPhoneNumber($_POST["phone_number"]);			
-			
+			$this->checkPhoneNumber($_POST["phone_number"]);
 			if(isset($_POST["comentario"])){
 				$this->comentario = htmlspecialchars_decode($_POST["comentario"]);
 			}
 			else{
 				$this->comentario = " ";
-			}	
+			}			
 			
 			//Establish values that will be returned via ajax
 			$returnArray = array();
@@ -76,22 +74,20 @@
 			if ($this->hasErrors($returnArray) === false){
 				$to = "servicios@igevet.gob.ar";
 				$mail_message = $this->buildMailMessage();
-				//$result = $this->sendMail("hernan.morales@gmail.com","REQ ST37", $mail_message);
-				$result = $this->sendMail($to,"REQ ST37", $mail_message);
+				$result = $this->sendMail($to,"REQ ST250", $mail_message);
 				if (! $result) 
-					//$returnArray['error'] = true;
-					header("Location:solicitud_error.php");
+					exit(header("Location:solicitud_error.php", true));
 				else
 					$returnArray['error'] = false;
 			}
 			else {
 				$returnArray['error'] = true;
 			}
-			// print_r($returnArray);
+			
 			return json_encode($returnArray);			
 		}
 	}
 
-	$ajaxValidate = new IGEVETST37Form;
+	$ajaxValidate = new IGEVETST250Form;
 	echo $ajaxValidate->formValidate();		
 ?>
