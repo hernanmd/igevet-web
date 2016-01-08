@@ -15,7 +15,7 @@
 			<div id="raza" class="form-group">	
 				<div>		
 					<label class="la_raza" for="raza">Raza</label>
-					<input type="text" class = "in_raza"name="raza">
+					<input type="text" class = "in_raza" name="raza">
 				</div>
 				
 				<div class="cleaner"></div>
@@ -24,7 +24,7 @@
 		<li>
 			<div id="tipo" class="form-group">	
 				<div>		
-					<label class="la_tipo" for="tipo">Tipo</label>
+					<label class="la_tipo" for="tipo">Procedencia de la solicitud</label>
 					<input type="radio" name="tipo_a" value="particular" checked>Particular    
 					<input type="radio" name="tipo_a" value="judicial">Judicial
 				</div>
@@ -33,24 +33,31 @@
 			</div>
 		</li>
 		<li>
-			<label class="la_tipo_muestra" >Tipo de muestra</label>
+			<label class="la_tipo_muestra" >Tipo de muestra  </label>
 			<div id="tipo-muestra-group" class="form-group">
 				<label class="la_pelo" >Pelo</label>
-				<input class="in_pelo" type="checkbox" name="pelo" value="Si">
+				<input class="in_pelo" type="checkbox" name="pelo" value="Pelo">
+				
 				<label class="la_hisopado_bucal" >Hisopado Bucal</label>
-				<input class="in_hisopado_bucal" type="checkbox" name="hisopado" value="Si">
+				<input class="in_hisopado_bucal" type="checkbox" name="hisopado" value="Hispado bucal">
+				<br>
 				<label class="la_sangre" >Sangre</label>
-				<input class="in_sangre" type="checkbox" name="sangre" value="Si">
+				<input class="in_sangre" type="checkbox" name="sangre" value="Sangre">
+				
 				<label class="la_tejido" >Tejidos</label>
-				<input class="in_tejido" type="checkbox" name="tejido" value="Si">
+				<input class="in_tejido" type="checkbox" name="tejido" value="Tejidos">
+				<br>
 				<label class="la_hueso" >Hueso</label>
-				<input class="in_hueso" type="checkbox" name="hueso" value="Si">
+				<input class="in_hueso" type="checkbox" name="hueso" value="Hueso">
+				
 				<label class="la_diente" >Diente</label>
-				<input class="in_diente" type="checkbox" name="diente" value="Si">
+				<input class="in_diente" type="checkbox" name="diente" value="Diente">
+				<br>
 				<label class="la_heces" >Heces</label>
-				<input class="in_heces" type="checkbox" name="heces" value="Si">
+				<input class="in_heces" type="checkbox" name="heces" value="Heces">
+				
 				<label class="la_orina" >Orina</label>
-				<input class="in_orina" type="checkbox" name="orina" value="Si">
+				<input class="in_orina" type="checkbox" name="orina" value="Orina">
 				<div class="cleaner"></div>
 			</div>
 		</li>
@@ -59,10 +66,10 @@
 			<input type"number" class="in_num_muestras">
 		</li>
 		<li>
-		<div>	
-			<label class="la_comentario" for="comentario">Comentarios adicionales</label>
-			<textarea class="in_comentario" name="comentario"></textarea> 
-			<div class="cleaner"></div>
-		</div>
-	</li>
+			<div>	
+				<label class="la_comentario" for="comentario">Comentarios adicionales</label>
+				<textarea class="in_comentario" name="comentario"></textarea> 
+				<div class="cleaner"></div>
+			</div>
+		</li>
 	</ul>
