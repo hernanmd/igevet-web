@@ -4,8 +4,10 @@
 			<div id="tipo_analisis" class="form-group">			
 				<label class="la_tipo_analisis" for="tipoanalisis">Tipo de an&aacute;lisis</label>
 				<select class="in_tipo_analisis" name="se_tipo_analisis">
-					<option selected="selected"/>Genotipado por SNPs
-					<option />STR
+					<option selected="selected"/>SNPs Genotyping
+					<option />CNV Genotyping
+					<option />miRNA Genotyping
+					<option />Exome Genotyping
 				</select>
 				<div class="cleaner"></div>
 			</div>
@@ -28,25 +30,64 @@
 				<div class="generator">
 					<label class="la_generator" for="listaespecies">Lista de especies</label>
 					<select class="generator" name="service_type">
-						<option selected="selected"/>Axiom® Genome-Wide BOS 1 Bovine Array (Bovino)
-						<option />Axiom® myDesign™ Human Genotyping Arrays (Humano)
+						<option selected="selected"/>Axiom® Cotton Genotyping Array (Algodón)
+						<option />Arabidopsis SNP Genotyping and Tiling Array (Arabidopsis)
+						<option />GeneChip® Rice 44K SNP Genotyping Array (Arroz)
+						<option />Axiom® Genome-Wide BOS 1 Bovine Array (Bovino)
 						<option />Axiom® Buffalo Genotyping Array (Búfalo)
+						<option />Axiom® Strawberry Genotyping Array (Fresa)
+						<option />Lettuce (Lactuca sativa) SNP Genotyping Array (Lechuga)
+						<option />Axiom® Maize Genotyping Array (Maíz)
+						<option />Canine SNP Genotyping Array (Perros)
+						<option />Pepper (Capsicum) SNP Genotyping Array (Pimienta)
 						<option />Axiom® Genome-Wide Chicken Genotyping Array (Pollos)
 						<option />Axiom® Porcine Genotyping Array (Porcinos)
-						<option />Axiom® myDesign™ Human Genotyping Arrays (Humano)
-						<option />Axiom® Cotton Genotyping Array (Algodón)
-						<option />Axiom® Maize Genotyping Array (Maíz)
-						<option />GeneChip® Rice 44K SNP Genotyping Array (Arroz)
-						<option />Axiom® Strawberry Genotyping Array (Fresa)
+						<option />Affymetrix® Mouse Diversity Genotyping Array (Ratón)
 						<option />Axiom® Salmon Genotyping Array (Salmón)
 						<option />Axiom® Soybean Genotyping Array (Soja)
-						<option />Axiom® Trout Genotyping Array (Trucha)
 						<option />Axiom® Wheat Genotyping Arrays (Trigo)
-						<option />Lettuce (Lactuca sativa) SNP Genotyping Array (Lechuga)
-						<option />Pepper (Capsicum) SNP Genotyping Array (Pimienta)
-						<option />Arabidopsis SNP Genotyping and Tiling Array (Arabidopsis)
-						<option />Canine SNP Genotyping Array (Perros)
-						<option />Affymetrix® Mouse Diversity Genotyping Array (Ratón)
+						<option />Axiom® Trout Genotyping Array (Trucha)
+						<optgroup label="Humanos">
+							<optgroup label="Axiom® Biobank Genotyping Arrays">
+								<option />UK Biobank Axiom® Array
+								<option />Axiom® Biobank Genotyping Array
+								<option />Axiom® Biobank Plus Genotyping Array
+							</optgroup>
+							<optgroup label="Axiom® Exome Genotyping Arrays">
+								<option />Axiom® Exome 319 Array Plate
+								<option />Axiom® Exome Plus Array Plate
+							</optgroup>
+							<optgroup label="Axiom® World Arrays">
+								<option />Axiom® Genome-Wide EUR 1 Array Plate
+								<option />Axiom® Genome-Wide EAS 1 Array Plate
+								<option />Axiom® Genome-Wide AFR 1 Array Plate
+								<option />Axiom® Genome-Wide LAT 1 Array Plate
+							</optgroup>
+							<optgroup label="Axiom® Genome-Wide Population-Optimized Human Arrays">
+								<option />Axiom® Genome-Wide CEU 1 Array Plate
+								<option />Axiom® Genome-Wide ASI 1 Array Plate
+								<option />Axiom® Genome-Wide CHB 1 Array Plate
+								<option />Axiom® Genome-Wide CHB 2 Array Plate
+							</optgroup>
+							<option />Axiom® Genome-Wide Human Origins 1 Array Plate
+							<optgroup label="Axiom® miRNA Target Site Genotyping Arrays">
+								<option />Axiom® miRNA Target Site Genotyping Array Plate
+								<option />Axiom® miRNA Target Site Plus Genotyping Array Plate
+							</optgroup>
+							<optgroup label="Axiom® myDesign™ Human Genotyping Arrays">
+								<option />Axiom® 384HT myDesign™ Custom Array
+								<option />Axiom® myDesign™ TG Array, 1K-25K
+								<option />Axiom® myDesign™ TG Array, 25K-50K
+								<option />Axiom® myDesign™ TG Array, 50K-90K
+								<option />Axiom® myDesign™ TG Array, 90K-200K
+								<option />Axiom® myDesign™ GW Array Plate, 200K-675K
+								<option />Axiom® myDesign™ GW Array Plate, 675K-1.3M
+								<option />Axiom® myDesign™ GW Array Plate, 1.3M-2.0M
+								<option />Axiom® myDesign™ GW Array Plate, 2.0M-2.6M
+							</optgroup>
+
+						</optgroup>
+						
 					</select>				
 				</div>
 				<div class="cleaner"></div>
@@ -75,10 +116,18 @@
 			</div>
 		</li>
 		<li>
+			<div>	
+				<label class="la_comentario" for="comentario">Comentarios adicionales</label>
+				<textarea class="in_comentario" name="comentario"></textarea> 
+				<div class="cleaner"></div>
+			</div>
+		</li>
+		<li>
 			<div id="soporte-group" class="form-group">
 				<label class="la_soporte" >¿Necesita soporte Bioinform&aacute;tico?</label>
 				<input class="in_soporte" type="checkbox" name="soporte" value="Si">
 				<div class="cleaner"></div>
 			</div>
 		</li>
+
 	</ul>

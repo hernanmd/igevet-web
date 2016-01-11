@@ -9,12 +9,11 @@
 	require_once 'messages.php';
 	require_once '../class_IGEVETBaseForm.php';
 	
-	class IGEVETST248Form extends IGEVETBaseForm {
+	class IGEVETST246Form extends IGEVETBaseForm {
 
 		private $comentario;
 		private $tipo_analisis;
 		private $raza;
-		private $especie;
 		private $num_muestras;
 		private $tipo_muestras;
 		private $tipo;
@@ -38,10 +37,6 @@
 		}
 		function getRaza(){
 			return $this->raza;
-		}
-
-		function getEspecie(){
-			return $this->especie;
 		}
 
 		function getNumMuestras(){
@@ -85,7 +80,6 @@
 				"<b>Institución: </b>" . $this->getInstitution() . "<br>" . 
 				"<b>Número de Teléfono: </b>" . $this->getPhoneNumner() . "<br>" .
 				"<b>Tipo de Analisis: </b>" . $this->getTipoAnalisis() . "<br>" .
-				"<b>Especie: </b>" . $this->getEspecie() . "<br>" .
 				"<b>Raza: </b>" . $this->getRaza() . "<br>" .
 				"<b>Numero de muestras: </b>" . $this->getNumMuestras() . "<br>" .
 				"<b>Tipo: </b>" . $this->getTipo() . "<br>" .
@@ -102,9 +96,7 @@
 			$this->checkInstitution($_POST["institution"]);
 			$this->checkPhoneNumber($_POST["phone_number"]);
 			
-
 			$this->tipo_analisis = trim($_POST["se_tipo_analisis"]);
-			$this->especie = trim($_POST["especie"]);
 			if(isset($_POST["raza"])){
 				$this->raza = htmlspecialchars_decode($_POST["raza"]);
 			}
@@ -160,7 +152,7 @@
 			}
 			else{
 				$this->comentario = " ";
-			}					
+			}			
 			
 			//Establish values that will be returned via ajax
 			$returnArray = array();
@@ -170,7 +162,7 @@
 			if ($this->hasErrors($returnArray) === false){
 				$to = "servicios@igevet.gob.ar";
 				$mail_message = $this->buildMailMessage();
-				$result = $this->sendMail($to,"REQ ST248", $mail_message);
+				$result = $this->sendMail($to,"REQ ST246", $mail_message);
 				if (! $result) 
 					exit(header("Location:solicitud_error.php", true));
 				else
@@ -184,6 +176,6 @@
 		}
 	}
 
-	$ajaxValidate = new IGEVETST248Form;
+	$ajaxValidate = new IGEVETST246Form;
 	echo $ajaxValidate->formValidate();		
 ?>

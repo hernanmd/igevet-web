@@ -8,7 +8,7 @@
 	<section>
 		<div class="contenedor">
 			<div class="traduccion">
-				<img src="../img/st_247.png" alt="id-genetica"/>
+				<img src="../../img/st_247.png" alt="id-genetica"/>
 				<h2>ST249</h2>
 				<h2>Identificación genética: Identificación Individual Canina</h2>
 			</div>

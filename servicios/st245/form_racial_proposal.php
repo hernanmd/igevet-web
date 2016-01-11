@@ -2,11 +2,12 @@
 	<ul>
 		<li>
 			<div id="tipo_analisis" class="form-group">			
-				<label class="la_tipo_analisis" for="tipoanalisis">Tipo de an&aacute;lisis</label>
+				<label class="la_tipo_analisis" for="tipoanalisis">Especie</label>
 				<select class="in_tipo_analisis" name="se_tipo_analisis">
-					<option selected="selected"/>Paternidad/Maternidad Total
-					<option />Paternidad/Maternidad Parcial
-					<option />Cambio de cria
+					<option selected="selected"/>Bovino
+					<option />Equino
+					<option />Ovino
+					<option />Canino
 				</select>
 				<div class="cleaner"></div>
 			</div>
@@ -14,7 +15,7 @@
 		<li>
 			<div id="raza" class="form-group">	
 				<div>		
-					<label class="la_raza" for="raza">Raza</label>
+					<label class="la_raza" for="raza">Probable raza de origen</label>
 					<input type="text" class = "in_raza" name="raza">
 				</div>
 				

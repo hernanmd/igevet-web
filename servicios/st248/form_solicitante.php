@@ -28,11 +28,4 @@
 		</div>
 	</li>
 
-	<li>
-		<div>	
-			<label class="la_comentario" for="comentario">Comentarios adicionales</label>
-			<textarea class="in_comentario" name="comentario"></textarea> 
-			<div class="cleaner"></div>
-		</div>
-	</li>
 </ul>

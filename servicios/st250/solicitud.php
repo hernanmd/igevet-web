@@ -8,7 +8,7 @@
 	<section>
 		<div class="contenedor">
 			<div class="traduccion">
-				<img src="../img/st_250.png" alt="id-genetica"/>
+				<img src="../../img/st_250.png" alt="id-genetica"/>
 				<h2>ST250</h2>
 				<h2>Identificación genética: Identificación Individual</h2>
 			</div>

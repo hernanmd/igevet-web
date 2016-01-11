@@ -5,6 +5,7 @@
 			<form id="form1" class='traduccion_form' method='POST'>
 				<?php 
 					require_once('form_solicitante.php');
+					require_once('form_robo_proposal.php');
 				?>
 				<li>
 					<button class="submit" type="submit">Enviar</button>

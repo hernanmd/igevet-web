@@ -17,7 +17,9 @@ error_reporting(E_ALL);
 		protected $cantMuestras;
 		protected $marca;
 		protected $soporte;
-		
+		protected $comentario;
+
+
 		function __construct() {
 			parent::__construct();		
 			$this->errorTipoAnalisis = "";
@@ -36,6 +38,10 @@ error_reporting(E_ALL);
 			return $this->tipoArray;
 		}
 		
+		function getComentario(){
+			return $this->comentario;
+		}
+
 		function getServiceType() {
 			return $this->serviceType; 
 		}
@@ -117,7 +123,8 @@ error_reporting(E_ALL);
 				"<b>Especie: </b>" . $this->getServiceType() . "<br>" .
 				"<b>Cantidad de muestras: </b>" . $this->getCantMuestras() . "<br>" .
 				"<b>Cantidad de marcadores: </b>" . $this->getMarca() . "<br>" .
-				"<b>Solicita soporte: </b>" . $this->getSoporte() . "<br>";
+				"<b>Solicita soporte: </b>" . $this->getSoporte() . "<br>" .
+				"<b>Comentarios: </b>" . "<br>" . $this->getComentario() . "<br>";
 			return $mail_message;
 		}
 		
@@ -140,6 +147,13 @@ error_reporting(E_ALL);
 			if(isset($_POST['soporte'])){
 				$this->soporte = trim($_POST["soporte"]);
 			}else{ $this->soporte = "no";}
+
+			if(isset($_POST["comentario"])){
+				$this->comentario = htmlspecialchars_decode($_POST["comentario"]);
+			}
+			else{
+				$this->comentario = " ";
+			}
 			
 			//Establish values that will be returned via ajax
 			$returnArray = array();

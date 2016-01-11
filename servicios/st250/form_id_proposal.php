@@ -1,12 +1,12 @@
 <h2>Información de inter&eacute;s</h2>
 	<ul>
 		<li>
-			<div id="tipo_analisis" class="form-group">			
-				<label class="la_tipo_analisis" for="tipoanalisis">Tipo de an&aacute;lisis</label>
-				<select class="in_tipo_analisis" name="se_tipo_analisis">
-					<option selected="selected"/>Paternidad/Maternidad Total
-					<option />Paternidad/Maternidad Parcial
-					<option />Cambio de cria
+			<div id="especie" class="form-group">			
+				<label class="la_especie" for="tipoanalisis">Especie</label>
+				<select class="in_especie" name="especie">
+					<option selected="selected"/>Bovino
+					<option />Equino
+					<option />Ovino
 				</select>
 				<div class="cleaner"></div>
 			</div>

@@ -9,7 +9,7 @@
 	<section>
 		<div class="contenedor">
 			<div class="traduccion">
-				<img src="../img/st_251.png" alt="id-genetica"/>
+				<img src="../../img/st_251.png" alt="id-genetica"/>
 				<h2>ST251</h2>
 				<h2>Identificación genética: Determinación de la especie animal de origen en alimentos o muestras biológicas</h2>
 			</div>

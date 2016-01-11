@@ -5,7 +5,7 @@
 			<form id="form1" class='traduccion_form' method='POST'>
 				<?php 
 					require_once('form_solicitante.php');
-					require_once('form_id_proposal.php');
+					require_once('form_racial_proposal.php');
 				?>
 				<li>
 					<button class="submit" type="submit">Enviar</button>
@@ -17,7 +17,7 @@
 						event.preventDefault();
 						$.ajax({
 							type: 'POST',
-							url: 'class_IGEVETST250Form.php',
+							url: 'class_IGEVETST245Form.php',
 							data: $(this).serialize(),
 							dataType: 'json',
 							error: function( xhr, status ) {

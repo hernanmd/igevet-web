@@ -102,6 +102,14 @@
 			else{
 				$this->raza = " No especificada ";
 			}
+
+			if(isset($_POST["num_muestras"])){
+				$this->num_muestras = htmlspecialchars_decode($_POST["num_muestras"]);
+			}
+			else{
+				$this->num_muestras = " No especificada ";
+			}
+
 			$this->tipo = trim($_POST["tipo_a"]);
 			
 			if(isset($_POST['pelo'])){

@@ -12,6 +12,17 @@
 			</div>
 		</li>
 		<li>
+			<div id="especie" class="form-group">			
+				<label class="la_especie" for="tipoanalisis">Especie</label>
+				<select class="in_especie" name="especie">
+					<option selected="selected"/>Bovino
+					<option />Equino
+					<option />Ovino
+				</select>
+				<div class="cleaner"></div>
+			</div>
+		</li>
+		<li>
 			<div id="raza" class="form-group">	
 				<div>		
 					<label class="la_raza" for="raza">Raza</label>

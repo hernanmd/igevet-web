@@ -9,7 +9,7 @@
 	<section>
 		<div class="contenedor">
 			<div class="traduccion">
-				<img src="../img/st_246.png" alt="id-genetica"/>
+				<img src="../../img/st_246.png" alt="id-genetica"/>
 				<h2>ST246</h2>
 				<h2>Identificación genética: Robo de ganado (abigeato)</h2>
 			</div>
