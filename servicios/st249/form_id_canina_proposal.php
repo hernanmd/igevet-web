@@ -1,16 +1,6 @@
 <h2>Información de inter&eacute;s</h2>
 	<ul>
-		<li>
-			<div id="tipo_analisis" class="form-group">			
-				<label class="la_tipo_analisis" for="tipoanalisis">Tipo de an&aacute;lisis</label>
-				<select class="in_tipo_analisis" name="se_tipo_analisis">
-					<option selected="selected"/>Paternidad/Maternidad Total
-					<option />Paternidad/Maternidad Parcial
-					<option />Cambio de cria
-				</select>
-				<div class="cleaner"></div>
-			</div>
-		</li>
+		
 		<li>
 			<div id="raza" class="form-group">	
 				<div>		
@@ -25,8 +15,8 @@
 			<div id="tipo" class="form-group">	
 				<div>		
 					<label class="la_tipo" for="tipo">Procedencia de la solicitud</label>
-					<input type="radio" name="tipo_a" value="particular" checked>Particular    
-					<input type="radio" name="tipo_a" value="judicial">Judicial
+					<input type="radio" name="tipo_a" value="Particular" checked>Particular    
+					<input type="radio" name="tipo_a" value="Judicial">Judicial
 					<input type="radio" name="tipo_a" value="Instituciones">Instituciones
 				</div>
 				
@@ -36,12 +26,12 @@
 		<li>
 			<label class="la_tipo_muestra" >Tipo de muestra  </label>
 			<div id="tipo-muestra-group" class="form-group">
-						
-				<label class="la_hisopado_bucal" >Hisopado Bucal</label>
-				<input class="in_hisopado_bucal" type="checkbox" name="hisopado" value="Hispado bucal">
 				
 				<label class="la_sangre" >Sangre</label>
 				<input class="in_sangre" type="checkbox" name="sangre" value="Sangre">
+				
+				<label class="la_hisopado_bucal" >Hisopado Bucal</label>
+				<input class="in_hisopado_bucal" type="checkbox" name="hisopado" value="Hispado bucal">
 				<br>
 				<label class="la_tejido" >Tejidos</label>
 				<input class="in_tejido" type="checkbox" name="tejido" value="Tejidos">
@@ -54,7 +44,6 @@
 				
 				<label class="la_heces" >Heces</label>
 				<input class="in_heces" type="checkbox" name="heces" value="Heces">
-				
 				<div class="cleaner"></div>
 			</div>
 		</li>

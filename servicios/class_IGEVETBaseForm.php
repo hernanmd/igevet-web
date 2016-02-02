@@ -80,9 +80,6 @@
 		}
 		
 		function checkInstitution ($formVal) {
-			if (empty($formVal))
-				$this->errorInstitution = "El campo Institución está incompleto";
-			else
 				$this->institution = $formVal;				
 		}
 		

@@ -17,14 +17,12 @@
 		private $num_muestras;
 		private $tipo_muestras;
 		private $tipo;
-		private $pelo;
 		private $hisopado;
 		private $sangre;
 		private $tejido;
 		private $hueso;
 		private $diente;
 		private $heces;
-		private $orina;
 
 		/* 
 		*
@@ -43,7 +41,7 @@
 			return $this->num_muestras;
 		}
 		function getTipoMuestras(){
-			$this->tipo_muestras = $this->pelo . " " . $this->hisopado . " " . $this->sangre . " " . $this->sangre . " " . $this->tejido . " " . $this->hueso . " " . $this->diente . " " . $this->heces . " " . $this->orina;
+			$this->tipo_muestras =$this->hisopado  . " " . $this->sangre . " " . $this->tejido . " " . $this->hueso . " " . $this->diente . " " . $this->heces;
 
 			return $this->tipo_muestras;
 		}
@@ -112,9 +110,6 @@
 
 			$this->tipo = trim($_POST["tipo_a"]);
 			
-			if(isset($_POST['pelo'])){
-				$this->pelo = trim($_POST["pelo"]);
-			}else{ $this->pelo = " ";}
 
 			if(isset($_POST['hisopado'])){
 				$this->hisopado = trim($_POST["hisopado"]);
@@ -140,11 +135,6 @@
 				$this->heces = trim($_POST["heces"]);
 			}else{ $this->heces = " ";}
 
-			if(isset($_POST['orina'])){
-				$this->orina = trim($_POST["orina"]);
-			}else{ $this->orina = " ";}
-
-
 
 			if(isset($_POST["comentario"])){
 				$this->comentario = htmlspecialchars_decode($_POST["comentario"]);
@@ -160,6 +150,7 @@
 			//Begin form functionality
 			if ($this->hasErrors($returnArray) === false){
 				$to = "servicios@igevet.gob.ar";
+				
 				$mail_message = $this->buildMailMessage();
 				$result = $this->sendMail($to,"REQ ST247", $mail_message);
 				if (! $result) 

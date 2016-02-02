@@ -48,7 +48,7 @@
 			return $this->num_muestras;
 		}
 		function getTipoMuestras(){
-			$this->tipo_muestras = $this->pelo . " " . $this->hisopado . " " . $this->sangre . " " . $this->sangre . " " . $this->tejido . " " . $this->hueso . " " . $this->diente . " " . $this->heces . " " . $this->orina;
+			$this->tipo_muestras = $this->pelo . " " . $this->hisopado . " " . $this->sangre . " " . $this->tejido . " " . $this->hueso . " " . $this->diente . " " . $this->heces . " " . $this->orina;
 
 			return $this->tipo_muestras;
 		}
