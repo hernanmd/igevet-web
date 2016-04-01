@@ -1,25 +1,18 @@
 <section>
 	<div class="workshop_color">
 		<div class="contenedor">
-				<h2>¿Cu&aacute;l de los siguientes temas es de su inter&eacute;s o de utilidad para su trabajo presente o futuro?</h2>
+				<h2>Inscripci&oacute;n</h2>
 		</div>
 	</div>
 	<div class="contenedor">
 		<div>
-			
-			
+						
 			<form id="form1" class='traduccion_form' method='POST'>
 				<?php 
 					require_once('form_proposal.php');
 				?>	
 				<ul>
-				<li class="workshop">
-					<div id="otros-ngs-group" class="form-group">
-						<label class="la_otros_ngs" > Otros :</label>
-						<input class="in_otros_ngs" type="text" name="otros_ngs">
-						<div class="cleaner"></div>
-					</div>
-				</li>				
+								
 				<li class="workshop">
 					<button class="submit" type="submit">Enviar</button>
 				</li>				
@@ -31,7 +24,7 @@
 						event.preventDefault();
 						$.ajax({
 							type: 'POST',
-							url: 'class_IGEVETEncuestaForm.php',
+							url: 'class_IGEVETInscripcionForm.php',
 							data: $(this).serialize(),
 							dataType: 'json',
 							error: function( xhr, status ) {
@@ -43,7 +36,26 @@
 								if (! data.error) {
 									$(this).unbind('submit').submit()
 									window.location.href ='solicitud_ok.php';												
-								} 
+								} else {
+									$('#name-group').addClass('has-error'); // add the error class to show red input												
+									$('#name-group').append('<div class="help-block">' + data.errorCompleteName + '</div>');
+									
+									$('#institution-group').addClass('has-error'); // add the error class to show red input												
+									$('#institution-group').append('<div class="help-block">' + data.errorInstitution + '</div>');
+									
+									$('#email-group').addClass('has-error'); // add the error class to show red input												
+									$('#email-group').append('<div class="help-block">' + data.errorEmail + '</div>');
+									
+									$('#phone-group').addClass('has-error'); // add the error class to show red input												
+									$('#phone-group').append('<div class="help-block">' + data.errorPhone_number + '</div>');
+								
+									$('#nacionalidad-group').addClass('has-error'); // add the error class to show red input												
+									$('#nacionalidad-group').append('<div class="help-block">' + data.errorNacionalidad + '</div>');
+
+									$('#cargo-group').addClass('has-error'); // add the error class to show red input												
+									$('#cargo-group').append('<div class="help-block">' + data.errorCargo + '</div>');
+									
+								}
 							}
 						});
 					});

@@ -17,8 +17,8 @@
 		<div class="contenedor">
 			<br>
 			<br>
-			<h3>Su respuesta fue enviada con éxito.</h3>
-			<h3>¡Muchas Gracias!</h3>	
+			<h3>Su inscripci&oacute;n fue enviada con éxito.</h3>
+			<h3>¡Muchas Gracias! Nos comunicaremos a la brevedad</h3>	
 			<br>
 		</div>
 	</section>

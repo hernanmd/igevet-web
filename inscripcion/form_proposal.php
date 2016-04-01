@@ -1,115 +1,74 @@
-<div class="row3">
+
 	<ul>
-		<!-- Encuesta Microarray -->
+	
+		<li>
+			<div id="tipo_inscripcion" class="form-group">			
+				<label class="la_tipo_inscripcion" for="tipoinscripcion">Inscripci&oacute;n a:</label>
 
-	<li>
-		<h2> Bioinform&aacute;tica de datos de microarrays</h2>
-	</li>
-		<li>
-			<div id="crudo-microarray-group" class="form-group">
-				<label class="la_crudo_microarray" > An&aacute;lisis de datos crudos </label>
-				<input class="in_crudo_microarray" type="checkbox" name="crudo_microarray" value="Si">
+				<label class="la_conferencia" >Conferencias Preliminares</label>
+				<input class="in_conferencia" type="checkbox" name="conferencia" value="Conferencias Preliminares">
+				<br>
+				<label class="la_modulo_1" >M&oacute;dulo 1</label>
+				<input class="in_modulo_1" type="checkbox" name="modulo_1" value="Modulo 1">
+				<br>
+				<label class="la_modulo_2" >M&oacute;dulo 2</label>
+				<input class="in_modulo_2" type="checkbox" name="modulo_2" value="Modulo 2">
+				<br>
+				<label class="la_ambos" >Ambos m&oacute;dulos</label>
+				<input class="in_ambos" type="checkbox" name="ambos" value="Ambos Modulos">
 				<div class="cleaner"></div>
 			</div>
 		</li>
 		<li>
-			<div id="archivo-microarray-group" class="form-group">
-				<label class="la_archivo_microarray" > Tipo y transformaci&oacute;n de archivos</label>
-				<input class="in_archivo_microarray" type="checkbox" name="archivo_microarray" value="Si">
+			<div id="informacion" class="form-group">	
+				<p> 
+				<strong>Aranceles:</strong>
+				<br>
+				Conferencias plenarias: Actividad gratuita. Requiere inscripción previa.
+				<br>
+				* Módulo 1 - Costo: AR$ 4.000 (cuatro mil Pesos). Los inscriptos deberán asistir con su computadora portable.
+				<br>
+				* Módulo 2 - Costo: AR$ 4.000 (cuatro mil Pesos). Los inscriptos deberán asistir con su computadora portable.
+				<br>
+				* Módulos 1 y 2- Costo : AR$ 6.000 (seis mil Pesos). Los inscriptos deberán asistir con su computadora portable.
+				<br>
+				</p>
+				
+				
 				<div class="cleaner"></div>
 			</div>
 		</li>
 		<li>
-			<div id="evolutivo-group" class="form-group">
-				<label class="la_evolutivo" > An&aacute;lisis poblacional/evolutivo</label>
-				<input class="in_evolutivo" type="checkbox" name="evolutivo" value="Si">
+			<h2> Datos del Solicitante </h2>
+			<?php 
+					require_once('form_solicitante.php');
+			?>
+			<div class="cleaner"></div>
+		</li>
+		<li>
+			<div id="beca-group" class="form-group">
+				<label class="la_beca" >Solicito beca:</label>
+				<input class="in_beca" type="checkbox" name="beca" value="Si">
+				<p>Enviar cv a: workshop@igevet.gob.ar 
+				<br>
+				Sujeto a selección por el Departamento de Postgrado de la Facultad de Cs. Veterinarias UNLP
+				</p>
+				
 				<div class="cleaner"></div>
 			</div>
 		</li>
 		<li>
-			<div id="gwas-group" class="form-group">
-				<label class="la_gwas" > Asociaci&oacute;n gen&oacute;mica (GWAS)</label>
-				<input class="in_gwas" type="checkbox" name="gwas" value="Si">
+			<div>	
+				<label class="la_comentario" for="comentario">Comentarios adicionales</label>
+				<textarea class="in_comentario" name="comentario"></textarea> 
 				<div class="cleaner"></div>
 			</div>
-		</li>
+		</li>		
 		<li>
-			<div id="seleccion-group" class="form-group">
-				<label class="la_seleccion" > Selecci&oacute;n gen&oacute;mica</label>
-				<input class="in_seleccion" type="checkbox" name="seleccion" value="Si">
-				<div class="cleaner"></div>
-			</div>
+			<p>
+			* Actividades aranceladas: la información para realizar el pago será enviada a la brevedad al correo electrónico indicado
+			</p>
 		</li>
-		<li>
-			<div id="copias-group" class="form-group">
-				<label class="la_copias" > Variaci&oacute;n en el n&uacute;mero de copias (CNV)</label>
-				<input class="in_copias" type="checkbox" name="copias" value="Si">
-				<div class="cleaner"></div>
-			</div>
-		</li>
-		<li>
-			<div id="trans-microarray-group" class="form-group">
-				<label class="la_trans_microarray" > Transcript&oacute;mica</label>
-				<input class="in_trans_microarray" type="checkbox" name="trans_microarray" value="Si">
-				<div class="cleaner"></div>
-			</div>
-		</li>
+
 	</ul>
-</div>
-<div class="cleaner"></div>
-
-
-		
-		<!-- Encuesta Secuenciacion masiva -->
-
-<div class="row4">
-	<ul>
-		<li>
-			<h2> Secuenciaci&oacute;n masiva (NGS) </h2>
-		</li>
-		<li>
-			<div id="crudo-ngs-group" class="form-group">
-				<label class="la_crudo_ngs" > An&aacute;lisis de datos crudos </label>
-				<input class="in_crudo_ngs" type="checkbox" name="crudo_ngs" value="Si">
-				<div class="cleaner"></div>
-			</div>
-		</li>
-		<li>
-			<div id="archivo-ngs-group" class="form-group">
-				<label class="la_archivo_ngs" > Tipo y transformaci&oacute;n de archivos</label>
-				<input class="in_archivo_ngs" type="checkbox" name="archivo_ngs" value="Si">
-				<div class="cleaner"></div>
-			</div>
-		</li>
-		<li>
-			<div id="ensamblado-group" class="form-group">
-				<label class="la_ensamblado" > Ensamblado de genoma y de regiones cromos&oacute;micas</label>
-				<input class="in_ensamblado" type="checkbox" name="ensamblado" value="Si">
-				<div class="cleaner"></div>
-			</div>
-		</li>
-		<li>
-			<div id="snp-group" class="form-group">
-				<label class="la_snp" > Detecci&oacute;n de SNPs</label>
-				<input class="in_snp" type="checkbox" name="snp" value="Si">
-				<div class="cleaner"></div>
-			</div>
-		</li>
-		<li>
-			<div id="anotacion-group" class="form-group">
-				<label class="la_anotacion" > Anotaci&oacute;n</label>
-				<input class="in_anotacion" type="checkbox" name="anotacion" value="Si">
-				<div class="cleaner"></div>
-			</div>
-		</li>
-		<li>
-			<div id="trans-ngs-group" class="form-group">
-				<label class="la_trans_ngs" > Transcript&oacute;mica</label>
-				<input class="in_trans_ngs" type="checkbox" name="trans_ngs" value="Si">
-				<div class="cleaner"></div>
-			</div>
-		</li>
-	</ul>
-</div>
-<div class="cleaner"></div>
 

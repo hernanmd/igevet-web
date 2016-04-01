@@ -637,7 +637,7 @@ margin-top:20px;
 text-align: right;
 padding-right: 20px;
 }
-.la_nombre, .la_institucion, .la_email, .la_telefono, .la_idiomaoriginal, .la_idiomafinal, .la_tiposervicio, .la_plazo, .la_cantcaracteres, .la_textoadjunto, .la_tipo_analisis, .la_tipo_array, .la_cantmuestras, .la_marcadores , .la_generator, .la_soporte, .la_raza, .la_tipo, .la_tipo_muestra, .la_num_muestras, .la_comentarios, .la_pelo, .la_hisopado_bucal, .la_sangre, .la_tejido, .la_hueso, .la_diente, .la_heces, .la_orina, .la_especie, .la_analysisType, .la_software, .la_comentario{
+.la_nombre, .la_institucion, .la_email, .la_telefono, .la_idiomaoriginal, .la_idiomafinal, .la_tiposervicio, .la_plazo, .la_cantcaracteres, .la_textoadjunto, .la_tipo_analisis, .la_tipo_array, .la_cantmuestras, .la_marcadores , .la_generator, .la_soporte, .la_raza, .la_tipo, .la_tipo_muestra, .la_num_muestras, .la_comentarios, .la_pelo, .la_hisopado_bucal, .la_sangre, .la_tejido, .la_hueso, .la_diente, .la_heces, .la_orina, .la_especie, .la_analysisType, .la_software, .la_comentario, .la_tipo_inscripcion, .la_conferencia, .la_modulo_1, .la_modulo_2, .la_ambos, .la_dni, .la_nacionalidad, .la_cargo, .la_beca{
 width: 210px;
 display: inline-block;
 }
