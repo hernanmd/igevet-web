@@ -10,7 +10,7 @@
 			<div class="traduccion">
 				<img src="../../img/st_247.png" alt="ST247"/>
 				<h2>ST247</h2>
-				<h2>Identificaci&oacute;n gen&eacute;tica: Paternidad/maternidad en Caninos</h2>
+				<h2>Identificación genética. Paternidad/maternidad en perros</h2>
 			</div>
 		</div>
 		<div class="cleaner"></div>

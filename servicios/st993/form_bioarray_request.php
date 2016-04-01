@@ -19,28 +19,28 @@
 			<div id="tipo_analisis" class="form-group">	
 				<label class="la_analysisType" for="tipo_analisis">Tipo de Análisis</label>
 				<select class="in_analysisType" name="service_type" id="sel1">
-					<option value="QualityAssessment" selected="selected"/>Quality assessment and read processing
-					<option value="Alignment" />Alignment software
-					<option value="VariantId" />Variant identification (Germline callers)
-					<option value="VariantAnnot" />Variant identification (Variant annotation)						
-					<option value="SomaticCallers" />Variant identification (Somatic callers)
-					<option value="CNVId" />Variant identification (CNV identification)
-					<option value="SVId" />Variant identification (SV identification)
-					<option value="GB" />Variant visualization (Genome Browsers)
-					<option value="VariantVis" />Variant visualization (CNV & SV)							
-					<option value="Pipelines" />Pipelines
-					<option value="Workflow" />Workflow systems
-					<option value="SNP" />SNP management
-					<option value="Imputation" />Imputation
-					<option value="GWAS" />GWAS
-					<option value="PopGen" />Population genomics and signatures of selection
-					<option value="GenomicPredictions" />Genomic predictions
+					<option value="QualityAssessment" selected="selected"/>Evaluación de calidad y procesamiento de datos
+					<option value="Alignment" />Alineación
+					<option value="VariantId" />Identificación de variantes germinales
+					<option value="VariantAnnot" />Anotación de variantes						
+					<option value="SomaticCallers" />Identificación de variantes somáticas
+					<option value="CNVId" />Identificación de CNV
+					<option value="SVId" />Identificación de variantes SV
+					<option value="GB" />Navegador de genomas
+					<option value="VariantVis" />Identificación de variantes SV y CNV							
+					<option value="Pipelines" />Segmentación
+					<option value="Workflow" />Sistemas de flujo de trabajo
+					<option value="SNP" />Manejo de SNP
+					<option value="Imputation" />Imputación
+					<option value="GWAS" />Estudio de asociación del genoma completo (GWAS)
+					<option value="PopGen" />Genómica poblacional y firmas de selección natural
+					<option value="GenomicPredictions" />Predicciones genómicas
 				</select>				
 			</div>
 		</li>
 		<li>
 			<div id="software_id" class="form-group">			
-				<label class="la_software" for="software">Software</label>
+				<label class="la_software" for="software">Programas</label>
 				<select name="software-name" class="in_software" id='sel2'>
 					<option value="Select">Select</option>
 					<option value="QualityAssessment--FastQC">FastQC</option>

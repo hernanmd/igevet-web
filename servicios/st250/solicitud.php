@@ -10,7 +10,7 @@
 			<div class="traduccion">
 				<img src="../../img/st_250.png" alt="id-genetica"/>
 				<h2>ST250</h2>
-				<h2>Identificación genética: Identificación Individual</h2>
+				<h2>Identificación genética. Identificación individual</h2>
 			</div>
 		</div>
 		<div class="cleaner"></div>

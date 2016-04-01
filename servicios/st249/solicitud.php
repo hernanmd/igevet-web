@@ -10,7 +10,7 @@
 			<div class="traduccion">
 				<img src="../../img/st_247.png" alt="id-genetica"/>
 				<h2>ST249</h2>
-				<h2>Identificación genética: Identificación Individual Canina</h2>
+				<h2>Identificación genética individual en perros</h2>
 			</div>
 		</div>
 		<div class="cleaner"></div>

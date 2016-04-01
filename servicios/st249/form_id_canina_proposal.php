@@ -17,7 +17,7 @@
 					<label class="la_tipo" for="tipo">Procedencia de la solicitud</label>
 					<input type="radio" name="tipo_a" value="Particular" checked>Particular    
 					<input type="radio" name="tipo_a" value="Judicial">Judicial
-					<input type="radio" name="tipo_a" value="Instituciones">Instituciones
+					<input type="radio" name="tipo_a" value="Institución">Institución
 				</div>
 				
 				<div class="cleaner"></div>
@@ -33,7 +33,7 @@
 				<label class="la_hisopado_bucal" >Hisopado Bucal</label>
 				<input class="in_hisopado_bucal" type="checkbox" name="hisopado" value="Hispado bucal">
 				<br>
-				<label class="la_tejido" >Tejidos</label>
+				<label class="la_tejido" >Tejido</label>
 				<input class="in_tejido" type="checkbox" name="tejido" value="Tejidos">
 				
 				<label class="la_hueso" >Hueso</label>

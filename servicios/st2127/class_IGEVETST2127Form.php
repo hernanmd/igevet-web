@@ -163,7 +163,7 @@ error_reporting(E_ALL);
 			if ($this->hasErrors($returnArray) === false){
 				$to = "servicios@igevet.gob.ar";
 				$mail_message = $this->buildMailMessage();
-				//$result = $this->sendMail("julieta.corvi@gmail.com","REQ ST2127", $mail_message);
+				$result = $this->sendMail("guillermogiovambattista@gmail.com","REQ ST2127", $mail_message);
 				$result = $this->sendMail($to,"REQ ST2127", $mail_message);
 				if (! $result) 
 					exit(header("Location:solicitud_error.php", true));

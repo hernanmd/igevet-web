@@ -76,25 +76,34 @@ $(document).ready(function(){
 		new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 	</script>
 	<div class="cleaner"></div>
+
+		<section>
+		<div class="contenedor">
+			<div class="bloqueb"></div>
+			<div class="cleaner"></div>
+		</div>
+	</section>
 	<section class="anclaje">
 		<div class="contenedor">
 			<div class="datos">
-				<p>Av. 60 y 118 s/n - La Plata</p>
-				<p>Tel.: +54 (0221) 4211799</p>
-				<p>E-mail: secretaria@igevet.gob.ar</p>
-			</div>
-			<div class="contexto">
 				<ul>
-					<li><img src="../img/conicet_negro.png" alt="conicet"></li>
-					<li><img src="../img/fcv.png" alt="facultad de ciencias veterinarias"></li>
-					<li><img src="../img/unlp.png" alt="universidad nacional de la plata"></li>
+					<li><p>Av. 60 y 118 s/n - La Plata</p></li>
+					<li><p>Tel.: +54 (0221) 4211799</p></li>
+					<li><p>E-mail: secretaria@igevet.gob.ar</p></li>
 				</ul>
 			</div>
-		</div>
-		<div class="cleaner"></div>
+			<div  class="contexto">
+				<img src="../img/ancla.png" alt="instituciones"></li>
+					
+			</div>
+		
+		</div class="cleaner"></div>
 	</section>
-	<div class="cleaner"></div>
 	<footer>
+		<div class="contenedor">
+			<p>copyright 2015 IGEVET - Todos los derechos reservados</p>
+		</div>
+	</footer>
 		<div class="contenedor">
 			<p>copyright 2015 IGEVET - Todos los derechos reservados</p>
 		</div>

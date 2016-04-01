@@ -7,6 +7,7 @@
 					<option selected="selected"/>Paternidad/Maternidad Total
 					<option />Paternidad/Maternidad Parcial
 					<option />Cambio de cria
+					<option />Identificación Individual
 				</select>
 				<div class="cleaner"></div>
 			</div>
@@ -27,6 +28,7 @@
 					<label class="la_tipo" for="tipo">Procedencia de la solicitud</label>
 					<input type="radio" name="tipo_a" value="particular" checked>Particular    
 					<input type="radio" name="tipo_a" value="judicial">Judicial
+					<input type="radio" name="tipo_a" value="institución">Institución
 				</div>
 				
 				<div class="cleaner"></div>
@@ -44,8 +46,8 @@
 				<label class="la_sangre" >Sangre</label>
 				<input class="in_sangre" type="checkbox" name="sangre" value="Sangre">
 				
-				<label class="la_tejido" >Tejidos</label>
-				<input class="in_tejido" type="checkbox" name="tejido" value="Tejidos">
+				<label class="la_tejido" >Tejido</label>
+				<input class="in_tejido" type="checkbox" name="tejido" value="Tejido">
 				<br>
 				<label class="la_hueso" >Hueso</label>
 				<input class="in_hueso" type="checkbox" name="hueso" value="Hueso">

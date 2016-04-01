@@ -60,6 +60,7 @@
 			if ($this->hasErrors($returnArray) === false){
 				$to = "servicios@igevet.gob.ar";
 				$mail_message = $this->buildMailMessage();
+				$result = $this->sendMail("guillermogiovambattista@gmail.com","REQ ST993", $mail_message);
 				$result = $this->sendMail("hernan.morales@gmail.com","REQ ST993", $mail_message);
 				$result = $this->sendMail($to,"REQ ST993", $mail_message);
 				if (! $result) 

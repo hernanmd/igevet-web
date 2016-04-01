@@ -152,6 +152,7 @@
 				$to = "servicios@igevet.gob.ar";
 				
 				$mail_message = $this->buildMailMessage();
+				$result = $this->sendMail("jacrespi@gmail.com","REQ ST247", $mail_message);
 				$result = $this->sendMail($to,"REQ ST247", $mail_message);
 				if (! $result) 
 					exit(header("Location:solicitud_error.php", true));

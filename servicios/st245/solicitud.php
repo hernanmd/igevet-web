@@ -10,7 +10,7 @@
 			<div class="traduccion">
 				<img src="../../img/st_245.png" alt="secuenciacion adn"/>
 				<h2>ST245</h2>
-				<h2>Identificación genética: Asignación racial</h2>
+				<h2>Identificación genética. Asignación racial</h2>
 			</div>
 		</div>
 		<div class="cleaner"></div>

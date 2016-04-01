@@ -10,7 +10,7 @@
 			<div class="traduccion">
 				<img src="../../img/st_2127.png" alt="ST993"/>
 				<h2>ST993</h2>
-				<h2>Servicio de análisis bioinformático de microarreglos de SNPs</h2>
+				<h2>Servicio de análisis bioinformático de microchips de SNP</h2>
 			</div>
 		</div>
 		<div class="cleaner"></div>

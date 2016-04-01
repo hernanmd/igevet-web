@@ -4,10 +4,10 @@
 			<div id="tipo_analisis" class="form-group">			
 				<label class="la_tipo_analisis" for="tipoanalisis">Tipo de an&aacute;lisis</label>
 				<select class="in_tipo_analisis" name="se_tipo_analisis">
-					<option selected="selected"/>SNPs Genotyping
-					<option />CNV Genotyping
-					<option />miRNA Genotyping
-					<option />Exome Genotyping
+					<option selected="selected"/>Genotipificación de SNP.
+					<option />Genotipificación de CNV.
+					<option />Genotificación de micro ARN (miRNA).
+					<option />Genotipificación de exomas.
 				</select>
 				<div class="cleaner"></div>
 			</div>
@@ -35,13 +35,14 @@
 						<option />GeneChip® Rice 44K SNP Genotyping Array (Arroz)
 						<option />Axiom® Genome-Wide BOS 1 Bovine Array (Bovino)
 						<option />Axiom® Buffalo Genotyping Array (Búfalo)
+						<option />Canine SNP Genotyping Array (Canino)
+						<option />Axiom® Equine Genotyping Array (Equino)
 						<option />Axiom® Strawberry Genotyping Array (Fresa)
 						<option />Lettuce (Lactuca sativa) SNP Genotyping Array (Lechuga)
 						<option />Axiom® Maize Genotyping Array (Maíz)
-						<option />Canine SNP Genotyping Array (Perros)
 						<option />Pepper (Capsicum) SNP Genotyping Array (Pimienta)
-						<option />Axiom® Genome-Wide Chicken Genotyping Array (Pollos)
-						<option />Axiom® Porcine Genotyping Array (Porcinos)
+						<option />Axiom® Genome-Wide Chicken Genotyping Array (Pollo)
+						<option />Axiom® Porcine Genotyping Array (Porcino)
 						<option />Affymetrix® Mouse Diversity Genotyping Array (Ratón)
 						<option />Axiom® Salmon Genotyping Array (Salmón)
 						<option />Axiom® Soybean Genotyping Array (Soja)
